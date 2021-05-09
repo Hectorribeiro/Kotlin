@@ -1,0 +1,38 @@
+fun main() {
+val number:Int = 24
+    println(number)
+val name:String = "Heitor Costa Ribeiro"
+    println(name)
+var number1 = 0 
+    println(number1)
+    number1 = 2021    
+	println(number1)
+var number2 = 0    
+    number2 = 2004
+var result = number1 - number2
+    println(result)
+    //println(number1 - number2)
+var presentation = "Olá, meu nome é $name, eu tenho anos $result e o meu número de chamada é $number"  
+    println(presentation)
+    
+//formula = "b*h/2"  
+  
+val valueb = 3
+    println(valueb)
+   
+val valueh = 7 
+    println(valueh)
+    
+var formula = valueb*valueh/2
+    println(formula)
+    
+val writing = "A área do triângulo é $formula"  
+    println(writing)
+    
+val pi = 3.141592f
+    println(pi)
+
+val pi:Int = pi.Toint()
+    print(pi)
+    
+}

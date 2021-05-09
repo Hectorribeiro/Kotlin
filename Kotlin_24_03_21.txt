@@ -1,0 +1,53 @@
+fun main() {
+var aluno1 = aluno()
+aluno1.nome = "Heitor"
+aluno1.matricula = "22000950"
+    
+    var aluno2 = aluno()
+aluno1.Nome = "ribeiro"
+aluno1.Matricula = "22000257"
+    
+    var aluno3 = Aluno()
+aluno1.Nome = "Bandido"
+aluno1.Matricula = "58100950"
+    
+    var aluno4 = Aluno()
+aluno1.Nome = "chávier"
+aluno1.Matricula = "22527950"
+    
+    var aluno5 = Aluno()
+aluno1.Nome = "Negão"
+aluno1.Matricula = "22000850"
+    
+    
+    var list = mutableListOf<aluno>() 
+    list.add(aluno1)
+     list.add(aluno2)
+      list.add(aluno3)
+       list.add(aluno4)
+        list.add(aluno5)
+        
+        for(aluno in list ){
+            var resultado = aluno.AssistirAula(null)
+            println(resultado)
+        }
+        
+class Aluno{
+    
+    val Nome: String = ""
+    val Matricula: String = ""
+   
+
+
+fun AssistirAula(nomeMateria: String?): String{
+      if(materia != null && materia != ""){
+   return "O aluno $Nome , de matricula $Matricula está assistindo a aula $materia"   
+      }else{
+          return"O aluno $Nome , de matricula $Matricula faltou a aula"
+      }
+      
+      }
+      
+
+}
+}

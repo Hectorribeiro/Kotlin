@@ -1,0 +1,146 @@
+fun main() {
+
+    //Questão 1
+    
+var list = mutableListOf<Int>(0,1,2,3,4,5,6,7,8,9)
+
+println("")
+for (i in list ){
+   var dobro = i * 2
+    println("elemento: $dobro")
+}
+
+//Questão 2
+
+val rand = (Math.random() * 100).toInt()
+
+println("")
+
+var lista: MutableList<Int> = mutableListOf()
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+lista.add((Math.random() * 100).toInt())
+
+println(lista)
+
+println("")
+
+for(i in lista){
+    
+    var mod = i % 2;
+if(mod == 0){
+    println("O número [$i] é par.")
+}
+}
+println("")
+
+//Questão 3
+var listNumber: MutableList<Int> = mutableListOf(24,2,4)
+//println(listNumber)
+
+for (n in listNumber ){
+    
+    println("número: $n")
+}
+
+var itemList1 = listNumber.get(1)
+var itemList2 = listNumber.get(2)
+println("Número de chamada: $itemList1$itemList2")
+
+
+
+println("")
+println("")
+
+//Questão 4
+
+var num = 0
+    
+    while (num < 9){
+        println("Elemento: $num")
+        num++;
+    }
+println("")
+
+    //Questão 5
+var listName: MutableList<String> = mutableListOf("Heitor","Costa","Ribeiro")
+
+for(i in listName){
+    print(" $i")
+}
+
+      println(" ")
+      println(" ")
+      
+//Questão 6
+
+
+
+var listaWhile: MutableList<Int> = mutableListOf()
+
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+listaWhile.add((Math.random() * 100).toInt())
+
+var i = 0
+
+while(i < listaWhile.size){
+    num = listaWhile[i]
+    var mod = num % 2;
+    if(mod == 0){
+        println(num)
+    }
+    i++;
+    
+}
+
+println("")
+//Questão 7
+
+
+var firstName: String? = "Heitor";
+    
+var lastName: String? = "Ribeiro";  
+    
+val email: String? = "@empresa.com.br";    
+    
+    if(firstName != null ){
+        
+    
+        println("Nome: $firstName") 
+        
+    }else{
+        println("Funcionário desconhecido.")
+    }
+    
+if(lastName != null ){
+    
+    println("Sobrenome: $lastName")
+    
+}else{
+    println("Funcionário desconhecido.")
+}
+
+if(email != null){
+    
+    println("E-mail: $firstName.$lastName$email")
+    
+}else{
+    println("Funcionário desconhecido.")
+}
+
+}

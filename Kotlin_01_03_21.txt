@@ -1,0 +1,72 @@
+fun main() {
+
+var number:Int? = 24
+if(number != null){
+    //number = 24
+    println(number)
+}
+var name:String? = "Heitor Costa Ribeiro"
+    if(name != null){
+    println(name)
+    }
+if(number != null){
+
+    if(number % 2 == 0){
+        println("O meu número de chamada é par.")
+    }else{
+    println("O meu número de chamada é impar.")
+    }
+}
+var year:Int? = null    
+    year = 2021
+    //println("O ano atual é $year.")
+
+if(year != null){
+    println("O ano atual é $year.")
+}else{
+    println("Ano desconhecido.")
+}   
+
+val group1:Int? = 1
+if(group1 != null){
+println(group1)
+}
+val group2:Int? = 2  
+if(group2 != null){
+println(group2)
+}  
+    
+if(number != null && number >= 1 && number <= 25){
+     println("O meu número de chamada é $number e pertenço ao $group1")
+}else if (number != null && number >= 26 && number <= 50 ){
+    println("O meu número de chamada é $number e pertenço ao $group2")
+}else{
+println("Não pertence a instituição.")
+}
+
+    
+
+    
+/*if(number % 2 == 0 ){
+    println("O meu número de chamada é $number e pertenço ao $group1")
+}else if(number % 3 == 0){
+    println("O meu número de chamada é $number e pertenço ao $group2")
+}else{
+println("Não pertence a instituição.")
+}*/
+
+var year2: Int? = null
+    year2 = 2021
+    println(year2)
+    
+  if(year2 != null){
+    when(year2){
+        in 2000..2030 ->println("O ano atual está entre 2000 e 2030")
+        in 1900..1999 ->println("O ano atual está entre 1900 e 1999")
+        else ->{
+            println("O ano atual não está entre 1900 e 2030")
+        }
+    }
+}
+
+}
